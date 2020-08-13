@@ -90,7 +90,7 @@
                     width: 78px
                     height: 27px
 
-@media (max-width: 767px)
+@media (max-width: 767px)   
     .menu
         position: fixed
         flex-direction: column
@@ -109,9 +109,11 @@
         &_item
             padding-right: 0
             border: none
-            margin: 10px 0
-            &_link
+            margin: 20px 0
+            .menu_link
                 font-size: 20px
+                &:hover
+                    color: white
     .hamburger
         display: block
         position: absolute
@@ -171,6 +173,36 @@
             margin-top: 31px
             img
                 width: 100%
+    .footer
+        padding-bottom: 20px
+        &_wrapper
+            flex-direction: column
+            align-items: center
+        &_wrapper > div
+            width: 100% 
+            &:nth-child(2)
+                order: 1
+                width: 100%
+                
+            &:nth-child(1)
+                order: 2
+                width: 157px
+                margin-top: 20px
+            &:nth-child(3)
+                order: 3  
+                width: 220px
+        &_links
+            width: 350px
+            &_sub
+                flex-wrap: wrap
+                padding: 0 55px
+        &_mobile
+            width: 100%
+            margin-right: 0px
+            margin-top: 18px
+            a
+                img
+                    width: 70px
 
 @media (max-width: 575px)
     .subheader
@@ -209,8 +241,9 @@
     .menu
         width: 65%
         height: 100%
-        &_link
-            font-size: 14px
+        &_item
+            .menu_link
+                font-size: 15px
     .reasons
         padding: 22px 0 36px
         &_block
@@ -244,37 +277,11 @@
         height: 360px
         &_link
             font-size: 13px
-    .footer
-        padding-bottom: 20px
-        &_wrapper
-            flex-direction: column
-            align-items: center
-        &_wrapper > div
-            width: 100% 
-            &:nth-child(2)
-                order: 1
-                width: 100%
-                
-            &:nth-child(1)
-                order: 2
-                width: 157px
-                margin-top: 20px
-            &:nth-child(3)
-                order: 3  
-                width: 218px
-        &_links
-            width: 350px
-            &_sub
-                flex-wrap: wrap
-                padding: 0 55px
-        &_mobile
-            width: 100%
-            margin-right: 0px
-            margin-top: 18px
-            a
-                img
-                    width: 70px
 @media (max-width: 385px)
+    .menu
+        &_item
+            .menu_link
+                font-size: 12px
     .footer
         &_line
             width: 239px
